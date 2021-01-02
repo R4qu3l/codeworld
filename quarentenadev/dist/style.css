@@ -1,0 +1,23 @@
+h1{color:red;
+
+}
+img{width:220px;
+  border:solid red 10px
+}
+
+h2,ul{color:#ff4500;
+}
+
+ul {
+  list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 10 10"><circle fill="black" cx="7" cy="7" r="2"/></svg>')
+}
+a:link{
+  color:red;
+}
+a:visited{
+  color:red;
+}
+
+a:hover{
+  
+}
