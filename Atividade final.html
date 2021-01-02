@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv-final</title>
+
+
+   <style>
+      
+         fieldset{
+            text-align: center;    
+            background-image: url("https://astron.com.br/wp-content/uploads/2017/07/pizza-site-or.jpg");
+            background-size:  100%,100% ;
+            background-repeat:no-repeat;
+	
+         
+         }
+       
+         button{
+           color:black;
+           background-color: rgb(165, 42, 42);
+           
+        }
+         ul li {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            list-style-type: none;
+        }
+        
+       body{
+           background-image: url("https://astron.com.br/wp-content/uploads/2017/07/pizza-site-or.jpg");
+            background-repeat:no-repeat;
+            background-size: 100%;
+            text-align: center;
+            font: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 20px;
+
+
+        }
+        
+        .Menu {
+               
+            text-align: center;    
+            font: Arial, Helvetica, sans-serif;
+            color:black;
+            font-size: 30px;
+          }
+
+    </style>
+</head>
+<body>
+ 
+<fieldset>
+    <h2>Pizzaria novo mundo </h2>
+    <h3>Menu</h3>
+</fieldset>
+<nav>
+ 
+<p class="Menu"> Faça o seu pedido!</p>
+    <ul>
+<li> Pizza pequena,R$ 15,00 <button  onclick="produto1();produto()"> Comprar </button></li>
+    <li> Pizza média,R$ 25,00 <button  onclick="produto2();produto()" >Comprar</button></li>
+    <li>Pizza família,R$ 35,00 <button onclick="produto3();produto()">Comprar</button></li>
+    <li>Refrigerante 2L,R$ 10,00 <button onclick="produto4();produto()">Comprar</button></li>
+    <li> Refrigerante 600 ml,R$ 5,00 <button onclick="produto5();produto()">Comprar</button></li>
+</ul>
+</nav>
+<script>
+
+
+    function produto1(){
+        var pro= alert("O produto escolhido foi:Pizza pequena,R$ 15,00") 
+        var und= Number(prompt("Quantas unidades deste produto?"))
+        var total=Number(und*15)
+        var valor=alert("O valor da compra é R$ "+total+" reais")
+
+    }
+    function produto2(){
+        var pro= alert("O produto escolhido foi:Pizza média,R$ 25,00")
+        var und= prompt("Quantas unidades deste produto?")
+        var total=Number(und*25)
+        var valor=alert("O valor da compra é R$ "+total+" reais")
+
+    }
+    function produto3(){
+        var pro= alert("O produto escolhido foi: Pizza família,R$ 35,00 ")
+        var und= prompt("Quantas unidades deste produto?")
+        var total=Number(und*35)
+        var valor=alert("O valor da compra é R$ "+total+" reais")
+
+    }
+
+    function produto4(){
+        var pro= alert("O produto escolhido foi:Refrigerante 2L,R$ 10,00")
+        var und= prompt("Quantas unidades deste produto?")
+        var total=Number(und*10)
+        var valor=alert("O valor da compra é R$ "+total+" reais")
+
+    }
+    function produto5(){
+       var pro= alert("O produto escolhido foi:Refrigerante 600 ml,R$ 5,00")
+        var und= prompt("Quantas unidades deste produto?")
+        var total=Number(und*5)
+        var valor=alert("O valor da compra é R$ "+total+" reais")
+
+    }
+    function produto(){
+        var pag= prompt("O pagamento é dinheiro(1) ou cartão(2) ?")
+    
+        switch(pag){
+             case "1":
+                var pgmt1 =confirm("É necessário troco?")
+             if (pgmt1="true"){
+                var troco=prompt("Para quantos reais será o troco?")
+                
+                var a=alert(total)
+
+               // if (Number(troco<total)){
+                
+                    alert("O troco não pode ser menor que o valor da compra")
+                    
+              //  } 
+      
+            }    
+           
+            
+        
+            break   
+            case "2":
+                var pgmt =prompt("O pagamento é online(1) ou presencial(2)?")
+                    if(pgmt==1){
+                        var dados=prompt("Digite o número do cartão")
+                        var dados1=prompt("Digite o prazo de validade")
+                        var dados2=prompt("Insira o código de segurança")
+                    }
+    
+                    else {
+                        var pre=prompt("O pagamento é a débito(1) ou crédito (2)?")
+                         if (pre==1){
+                             var deb=alert("A máquina de débito será enviada")
+                        }
+
+                         else{
+                        var cred=alert("A máquina de crédito será enviada")
+                        }
+                        var fim=alert("A sua compra foi finalizada,agradecemos a preferência")
+                    
+                    }  
+                         
+            if(dados.length>16||dados1.length>4||dados2.length>3){
+            alert("Cartão inválido")
+            }
+            else{         
+            }
+        }
+        var fim=alert("A sua compra foi finalizada,agradecemos a preferência")
+    }
+    
+    
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+  
+
+        
+</script>
+</body>
+</html>
